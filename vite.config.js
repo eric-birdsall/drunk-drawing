@@ -1,5 +1,6 @@
 import { execSync } from "node:child_process";
 import { readFileSync } from "node:fs";
+import { VitePWA } from "vite-plugin-pwa";
 
 // Version and "last updated" stamp for the main menu, read from git at build
 // time so every commit (and every Pages deploy) updates it automatically.
@@ -22,6 +23,34 @@ const build = {
 };
 
 export default {
+  plugins: [VitePWA({
+    strategies: "injectManifest",
+    srcDir: "src",
+    filename: "sw.js",
+    injectRegister: false,
+    registerType: "prompt",
+    manifest: {
+      name: "Drunk Drawing",
+      short_name: "Drunk Drawing",
+      description: "A same-room drawing and guessing game.",
+      id: "./",
+      start_url: "./",
+      scope: "./",
+      display: "standalone",
+      theme_color: "#161b1a",
+      background_color: "#161b1a",
+      icons: [192, 512].map(size => ({
+        src: `icons/icon-${size}.png`,
+        sizes: `${size}x${size}`,
+        type: "image/png",
+        purpose: "any",
+      })),
+    },
+    injectManifest: {
+      globPatterns: ["**/*.{html,js,css,png,jpg,jpeg,svg,webp,ico,mp3,wav,ogg,m4a,woff,woff2,ttf,glb,gltf,bin,json,webmanifest}"],
+      maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
+    },
+  })],
   server: {
     port: 5174,
   },

@@ -6,12 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
-    "test": "node --test"
+    "test": "node --test",
+    "test:pwa": "npm run build && node scripts/pwa-check.mjs"
   },
   "devDependencies": {
-    "vite": "8.3.5"
+    "playwright": "^1.65.1",
+    "vite": "8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
   },
   "engines": {
     "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "workbox-precaching": "^7.4.1",
+    "workbox-range-requests": "^7.4.1",
+    "workbox-routing": "^7.4.1"
   }
 }

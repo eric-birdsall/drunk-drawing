@@ -11,6 +11,7 @@ import { drawCover } from "./cover.js";
 import { createGallery } from "./gallery.js";
 import { createMusic } from "./music.js";
 import "./badDraw.css";
+import "./pwa.js";
 
 // Medium is the shared default. Easy is a steady sway with a little room for mistakes;
 // Hard wanders far and fast, hiccups harder, and gives less time and fewer fixes.
