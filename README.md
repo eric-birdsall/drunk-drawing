@@ -2,7 +2,7 @@
 
 Drunk Drawing is a same-room drawing and guessing game. Your team guesses out loud while your ink drifts away from where you aim.
 
-Run `npm ci` and `npm run dev`, then open the URL Vite prints. Use `npm test` for the game logic tests and `npm run build` to make a static build. All 1,000 prompts are bundled locally. Each is rated easy, medium, or hard in `shared/badDrawWords.js`; hard words are hidden for now (see `pickWord` in `src/badDraw.js`), leaving 671 in play. The game needs no backend.
+Run `npm ci` and `npm run dev`, then open the URL Vite prints. Use `npm test` for the game logic tests and `npm run build` to make a static build. All 1,055 prompts are bundled locally. Each is rated easy, medium, or hard in `shared/badDrawWords.js`; hard words are hidden for now (see `pickWord` in `src/badDraw.js`), leaving 556 in play. The game needs no backend.
 
 It is built for touch screens only (phones and tablets). There are no keyboard or controller controls.
 

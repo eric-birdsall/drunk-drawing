@@ -1,4 +1,5 @@
 // Additional prompts sourced from the Datamuse API (https://www.datamuse.com/api/).
+// Further prompts added from the supplied Art Teacher Diaries Pictionary worksheet.
 // Each category is split by how hard the word is to draw and guess:
 // easy = one simple, iconic shape; medium = needs a detail or two;
 // hard = abstract, easily mistaken for something else, or needs an exact word.
@@ -28,6 +29,12 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "pig",
     ],
     medium: [
+      "alligator",
+      "bumblebee",
+      "goose",
+      "rattlesnake",
+      "turkey",
+      "vampire bat",
       "kangaroo",
       "flamingo",
       "crocodile",
@@ -79,6 +86,14 @@ export const BAD_DRAW_WORDS = Object.freeze({
   },
   objects: {
     easy: [
+      "door",
+      "ear",
+      "eyeball",
+      "gift",
+      "paperclip",
+      "pencil",
+      "stop sign",
+      "tooth",
       "umbrella",
       "scissors",
       "balloon",
@@ -117,6 +132,14 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "wheel",
     ],
     medium: [
+      "camera",
+      "glue",
+      "phone charger",
+      "robot",
+      "school bus",
+      "stapler",
+      "telephone",
+      "ugly sweater",
       "bicycle",
       "toothbrush",
       "telescope",
@@ -374,6 +397,8 @@ export const BAD_DRAW_WORDS = Object.freeze({
   },
   food: {
     easy: [
+      "french fries",
+      "ice cream cone",
       "pizza",
       "banana",
       "hamburger",
@@ -393,6 +418,7 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "bowl",
     ],
     medium: [
+      "cheeseburger",
       "pretzel",
       "popcorn",
       "taco",
@@ -500,6 +526,11 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "flying a kite",
     ],
     medium: [
+      "movie",
+      "soccer",
+      "teacher",
+      "tennis",
+      "wedding",
       "skiing",
       "dancing",
       "walking a dog",
@@ -527,6 +558,9 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "wrestling",
     ],
     hard: [
+      "4th of july",
+      "road trip",
+      "social media",
       "acrobatics",
       "actor",
       "climber",
@@ -573,6 +607,7 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "swamp",
     ],
     hard: [
+      "united states",
       "bayou",
       "bookstore",
       "bungalow",
@@ -613,6 +648,14 @@ export const BAD_DRAW_WORDS = Object.freeze({
   },
   nature: {
     easy: [
+      "cactus",
+      "earth",
+      "leaf",
+      "mountain",
+      "moon",
+      "rainbow",
+      "star",
+      "sunflower",
       "apple",
       "arrow",
       "fire",
@@ -620,6 +663,8 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "snow",
     ],
     medium: [
+      "jupiter",
+      "river",
       "asteroid",
       "crystal",
       "daisy",
@@ -654,6 +699,8 @@ export const BAD_DRAW_WORDS = Object.freeze({
   },
   extras: {
     easy: [
+      "alien",
+      "ghost",
       "anchor",
       "ball",
       "bed",
@@ -682,6 +729,14 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "window",
     ],
     medium: [
+      "baby",
+      "dragon",
+      "elf",
+      "gnome",
+      "tooth fairy",
+      "troll",
+      "unicorn",
+      "witch",
       "ant",
       "antenna",
       "antler",
@@ -856,6 +911,7 @@ export const BAD_DRAW_WORDS = Object.freeze({
       "zoo",
     ],
     hard: [
+      "mona lisa",
       "air bag",
       "alley",
       "anaconda",
